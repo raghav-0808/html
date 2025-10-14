@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action=" " method="get">
+        <fieldset>
+            <legend>Registration Form</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for ="">your contact</label>
+        <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120"><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for ="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other   " name="gender" value="other">
+        <label for="other">Other</label><br><br>
+        
+        <input type="checkbox" id="maths" name="subject" value="maths">
+        <label for="maths">Maths</label>
+        <input type="checkbox" id="science" name="subject" value="science">
+        <label for="science">Science</label>
+        <input type="checkbox" id="ds" name="subject" value="ds">
+        <label for="ds">ds</label><br><br>
+        <input type ="checkbox" id="" name="" >wd
+        <label for="">web development</label><br><br>
+        <label for="">your distance</label>
+        <input type="range" id="distance" name="distance" min="0" max="100"><br><br>
+        <label for "address"> address:</label>
+        <input type ="text area" id="distance" name="distance" rows="10" cols="50"></input><br><br>
+        <label for="">attach file:</label>
+        <input type="file" id="file" name="file"><br><br>
+        <input list="browsers"/>
+        <datalist id="browsers">
+            <option value="chrome">
+            <option value="firefox">
+            <option value="safari">
+            <option value="edge">
+            <option value="opera">
+        <input type="submit" value="submit">
+        <label for="your subject"></label>
+
+
+        </fieldset>
+        
+</body>
+</html>
