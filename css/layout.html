@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>container</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container {
+            height: 600px;
+            margin: 20px ;
+            border: 4px solid black ;
+            background-color: beige;
+        }
+        .h {
+            background-color: aqua;
+            border: 4px solid black;
+            margin: 10px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #r {
+            background-color: blue;
+        }
+        #left {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 10px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid black;
+        }
+        .content {
+            display: flex;
+        }
+        .box2 {
+            width: 100%;
+            height: 210px;
+            background-color: aquamarine;
+            margin: 10px;
+            border: 4px solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #f{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="h">header</div>
+        <div class="h" id="r">nav</div>
+        <div class="content">
+            <div id="left">
+                <div class="box">article</div>
+                <div class="box">section</div>
+            </div>
+                <div class="box2">aside</div>
+        </div>
+        <div class="h" id="f"> footer</div>
+    </div>
+</body>
+</html>
