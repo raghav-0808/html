@@ -14,7 +14,7 @@
     }
 
     .container {
-        height: 600px;
+        height: 650px;
         width: 100%;
         margin: 20px;
         border: 4px solid black;
@@ -24,7 +24,7 @@
     .page {
         height: 50px;
         margin: 20px;
-        border: 4px solid;
+        /* border: 4px solid; */
         background-color: lightgreen;
         display: flex;
         align-items: center;
@@ -32,72 +32,101 @@
 
     .content {
         height: 400px;
-        margin: 20px;
-        border: 4px solid;
-        background-color: lightgreen;
+        margin: px;
+        /* border: 4px solid; */
+        /* background-color: lightgreen; */
+        display: flex;
+        flex-direction: row;
     }
 
     .aside1 {
         margin: 20px;
         display: flex;
         flex-direction: row;
-
     }
 
     .aside {
         width: 50%;
-        height: 350px;
-        border: 4px solid;
+        height: 240px;
+        /* border: 4px solid; */
         background-color: lightgreen;
-        margin-right: 20px;
+        margin: 20px;
+        text-align: center;
     }
 
     .aside2 {
         width: 50%;
         height: 350px;
-        border: 4px solid;
-        background-color: lightgreen;
-       
+        /* border: 4px solid; */
+        /* background-color: lightgreen; */
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
     }
 
     .aside3 {
         width: 50%;
         height: 100px;
-        margin: 20px;
-        border: 4px solid;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        /* border: 4px solid; */
         background-color: lightgreen;
+        display: flex;
+        align-items: center;
     }
 
-    .aside4 {
-        width: 100px;
-        height: 100px;
-        margin: 20px;
-        border: 4px solid;
-        background-color: lightgreen;
-    }
-    .asd{
-
+    .asd {
         display: flex;
         flex-direction: row;
+    }
+
+    .asd2 {
+        height: 300px;
+        /* margin: 20px; */
+        display: flex;
+        align-items: center;
+        /* border: 4px solid; */
+        background-color: lightgreen;
+    }
+
+    .article {
+        height: 50px;
+        margin: 20px;
+        /* border: 4px solid; */
+        background-color: white;
+    }
+
+    #art {
+        height: 100px;
+    }
+
+    .section {
+        height: 100px;
+        /* border: 4px solid; */
+        margin-top: 40px;
+        background-color: lightgreen;
     }
 </style>
 
 <body>
     <div class="container">
         <div class="page">page header</div>
-        <nav class="page">NAV</nav>
+        <nav class="page">Nav</nav>
         <div class="content">
-            <div class="aside1">
-                <div class="aside"></div>
-                <div></div>
-                <div class="aside2">
-                    <div class="asd">
-                        <div class="aside3">aside</div>
-                        <div class="aside3">aside</div>
-                    </div>
+            <div class="aside"> ARTICLE
+                <div class="article"> article header</div>
+                <div class="article" id="art"> main</div>
+                <div class="section">section</div>
+            </div>
+            <div class="aside2">
+                <div class="asd">
+                    <div class="aside3">aside</div>
+                    <div class="aside3">aside</div>
                 </div>
+                <div class="asd2">aside down</div>
             </div>
         </div>
+        <div class="page">footer</div>
     </div>
     </div>
 </body>
