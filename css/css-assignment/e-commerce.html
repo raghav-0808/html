@@ -10,6 +10,7 @@
       margin: 0;
       padding: 0;
     }
+
     .shopesy {
       background-color: black;
       color: aliceblue;
@@ -18,9 +19,10 @@
       font-weight: bold;
       display: flex;
       justify-content: center;
-      align-items: center;  
+      align-items: center;
       margin-top: 20px;
     }
+
     .container {
       display: flex;
       justify-content: center;
@@ -35,10 +37,16 @@
       text-align: center;
       margin: 20px;
     }
-    .product-image img{
+
+    .product-image img {
       height: 200px;
       margin-bottom: 15px;
-      color: #0056b3;
+
+    }
+
+    .product-image img:hover {
+      height: 220px;
+      filter: hue-rotate(100deg);
     }
 
     .product-title {
@@ -70,13 +78,16 @@
       padding: 10px 20px;
       font-size: 15px;
       border-radius: 5px;
+      border: 4px solid #0056b3;
+
     }
+
     .add-to-cart:hover {
       background-color: #0056b3;
       font-size: 20px;
     }
   </style>
-  
+
 </head>
 
 <body>
@@ -85,8 +96,10 @@
 
     <div class="product-card">
       <div class="product-image">
-        
-        <img src="https://chriscross.in/cdn/shop/files/ChrisCross100_CottonOliveGreenMensTShirt.jpg?v=1748250204&width=1000" alt="green t-shirt">
+
+        <img
+          src="https://chriscross.in/cdn/shop/files/ChrisCross100_CottonOliveGreenMensTShirt.jpg?v=1748250204&width=1000"
+          alt="green t-shirt">
       </div>
       <div class="product-title">Classic Cotton T-shirt</div>
       <div class="product-description">
