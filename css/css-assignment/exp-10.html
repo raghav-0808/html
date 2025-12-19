@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #333;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0 15px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .nav-links2 {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-links2 li {
+        margin: 0 15px;
+        font-size: 25px;
+    }
+
+    .nav-links2 a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        height: 3px;
+        width: 25px;
+        background: #fff;
+        margin: 4px 0;
+    }
+
+    @media (max-width: 800px) {
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            background: #333;
+            position: fixed;
+            top: 65px;
+            left: 0;
+            width: 100%;
+        }
+
+        #menu-toggle:checked~.nav-links {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+    }
+    .heading {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .para {
+        font-family: 'Segoe UI';
+        font-style: italic;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">ShopEase</div>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">products</a></li>
+            <li><a href="#">categories</a></li>
+            <li><a href="#">deals</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="nav-links2">
+            <li><a href="">cart</a></li>
+            <li><a href="">login</a></li>
+        </ul>
+    </nav>
+    <div class="heading">Welcome to ShopEase!</div>
+    <div class="para">your one-stop destination for all your shopping</div>
+
+</body>
+
+</html>
