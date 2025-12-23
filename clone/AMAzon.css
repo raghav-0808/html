@@ -16,6 +16,7 @@ div {
   font-size: large;
   font-weight: bold;
 }
+
 .searchbox {
   height: 40px;
   width: 50%;
@@ -43,6 +44,10 @@ p {
   justify-content: center;
   align-items: center;
 }
+.hov:hover {
+  border: 1px solid white;
+  border-radius: 4px;
+}
 
 ul {
   background-color: rgb(43, 45, 65);
@@ -57,7 +62,7 @@ ul li a {
   text-decoration: none;
   color: aliceblue;
   margin: 20px;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 100;
 }
 
@@ -122,8 +127,10 @@ a {
   margin: 10px;
   text-decoration: none;
 }
-a:hover {
-  color: blue;
+ul li a:hover {
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 4px;
 }
 .h {
   font-size: 10px;
@@ -142,9 +149,9 @@ a:hover {
 .gridi2 {
   background-color: #232f3e;
   height: 350px;
+  padding: 40px;
   display: flex;
   justify-content: center;
-  align-items: ;
   color: aliceblue;
 }
 .gridilong2 {
@@ -170,5 +177,26 @@ a:hover {
 }
 .ul2 li a {
   margin: 10px;
-  font-size: 20px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
 }
+.ul2 li a:hover {
+  padding: 0;
+  border: none;
+  color: aliceblue;
+  text-decoration: underline;
+}
+f1 {
+  font-size: 16px;
+  margin-left: 10px;
+}
+pre {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: aliceblue;
+}
+/* .deals{
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+} */
